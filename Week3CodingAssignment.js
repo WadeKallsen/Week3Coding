@@ -1,4 +1,4 @@
-//created new array called ages with assigned values
+/*//created new array called ages with assigned values
 var ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
 //Finding the last item in the array programmatically
@@ -24,35 +24,53 @@ for (var i =0; i < ages.length; i++){
 } console.log(average = sum/ages.length);
 
 average = Math.floor(average);
-console.log(average);
+console.log(average);*/
 
+
+//created new array called names with assigned names and sent to the console to ensure it works
 var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
-var lengths = names.map(function(element){
+console.log(names);
+
+// This pertains to question 5 on the assignment. created a new variable called nameLengths to determine number of letters per item in the names array; then sent that to the console
+var nameLengths = names.map(function(element){
     return element.length;
 }); 
-console.log(lengths);
+console.log(nameLengths);
 
-var sum = 0; 
-for (var i =0; i < lengths.length; i++){
-    sum = sum + lengths[i];
+// created loop to determine the average number of letters per name in the names array; then sent that to the console
+/*var sum = 0; 
+for (var i =0; i < nameLengths.length; i++){
+    sum = sum + nameLengths[i];
     
-} console.log(average = sum/lengths.length);
+} console.log(average = sum/nameLengths.length);
+
+// rounded down the average result to the nearest whole number
 average = Math.floor(average);
 console.log(average);
 
-var concatenatedNames = "  " ;
+//sent the array to the console as a string separated by spaces
+console.log(names.join(' ')); */
 
-for (let i = 0; i < names.length; i++){
-    concatenatedNames = concatenatedNames.concat(names[i]);
-}
- console.log(concatenatedNames);
 
+
+ 
 // Referring to question 3: This is how I would access the last item in an array.
  console.log(names[names.length - 1]);
 
  // Referring to question 4: This is how I would access the first item in an array.
  console.log(names[0]);
 
-var nameLengths = names.map(function(element){
-    return element.length;
-}); console.log(nameLengths);
+
+ // Created a loop to calculate the sum of all the elements in the nameLengths array and sent that to the console
+ var sum = 0;
+for (var i = 0; i < nameLengths.length; i++){
+    sum += nameLengths[i];
+} console.log(sum);
+
+let n = 3;
+let word = "Hello";
+let x =0;
+function question7 (word, n){
+   
+    return x = (word * n);
+} console.log(x);
