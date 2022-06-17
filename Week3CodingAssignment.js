@@ -28,7 +28,7 @@ console.log(average);*/
 
 
 //created new array called names with assigned names and sent to the console to ensure it works
-var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
+/* var names = ["Sam", "Tommy", "Tim", "Sally", "Buck", "Bob"];
 console.log(names);
 
 // This pertains to question 5 on the assignment. created a new variable called nameLengths to determine number of letters per item in the names array; then sent that to the console
@@ -55,7 +55,7 @@ console.log(names.join(' ')); */
 
  
 // Referring to question 3: This is how I would access the last item in an array.
- console.log(names[names.length - 1]);
+ /*console.log(names[names.length - 1]);
 
  // Referring to question 4: This is how I would access the first item in an array.
  console.log(names[0]);
@@ -65,12 +65,23 @@ console.log(names.join(' ')); */
  var sum = 0;
 for (var i = 0; i < nameLengths.length; i++){
     sum += nameLengths[i];
-} console.log(sum);
+} console.log(sum); */
 
-let n = 3;
-let word = "Hello";
-let x =0;
-function question7 (word, n){
-   
-    return x = (word * n);
-} console.log(x);
+//created a function with two parameters then returned the full name (concatenated firstName and lastname) with spaces.
+function fullName(firstName, lastName){
+    console.log(firstName + " " + lastName);
+}
+
+fullName("Wade", "Kallsen");
+
+let array = [22, 46, 37];
+
+let sum = array.reduce(function(accumulator, currentValue){
+    return accumulator + currentValue;
+}); console.log(sum);
+
+if (sum > 100){
+    console.log(true);
+} else {
+    console.log(false);
+}
